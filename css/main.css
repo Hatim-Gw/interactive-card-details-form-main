@@ -1,0 +1,235 @@
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrong {
+  color: hsl(0, 100%, 66%);
+}
+
+@media (max-width: 375px) {
+  .card {
+    min-height: 100vh;
+    background-image: url("../../images/bg-main-mobile.png");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  .card-container {
+    position: relative;
+  }
+  .card-box {
+    position: absolute;
+  }
+  .card-box:first-child {
+    top: 50px;
+    right: 30px;
+  }
+  .card-box:first-child div {
+    position: absolute;
+    bottom: 64px;
+    right: 34px;
+    color: hsl(0, 0%, 100%);
+  }
+  .card-box:last-child {
+    top: 150px;
+    right: 70px;
+  }
+  .card-box:last-child span:nth-child(2) {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    border-radius: 50%;
+  }
+  .card-box:last-child span:nth-child(3) {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 25px;
+    left: 75px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+  }
+  .card-box:last-child .card-number {
+    position: absolute;
+    bottom: 35px;
+    left: 40px;
+    font-size: 20px;
+    color: hsl(0, 0%, 100%);
+  }
+  .card-box:last-child .holder {
+    position: absolute;
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    bottom: 10px;
+    left: 30px;
+    color: hsl(0, 0%, 100%);
+  }
+  .card-box img {
+    width: 250px;
+  }
+  .form {
+    padding: 5px;
+    padding-top: 350px;
+  }
+  .form > div {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .form .date-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .form .date-input div {
+    padding-right: 10px;
+  }
+  .completed {
+    padding: 350px 5px 0;
+    text-align: center;
+  }
+  .completed > * {
+    padding-bottom: 15px;
+  }
+}
+@media (min-width: 1440px) {
+  .card {
+    min-height: 100vh;
+    background-image: url("../../images/bg-main-desktop.png");
+    background-repeat: repeat-y;
+    background-position: top left;
+  }
+  .card-container {
+    position: relative;
+  }
+  .card-box {
+    position: absolute;
+  }
+  .card-box:first-child {
+    top: 500px;
+    left: 20%;
+  }
+  .card-box:first-child div {
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+  }
+  .card-box:last-child {
+    top: 250px;
+    left: 15%;
+  }
+  .card-box:last-child span:nth-child(2) {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+  }
+  .card-box:last-child span:nth-child(3) {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 25px;
+    left: 75px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+  }
+  .card-box:last-child .card-number {
+    position: absolute;
+    bottom: 65px;
+    left: 40px;
+    font-size: 26px;
+    color: hsl(0, 0%, 100%);
+  }
+  .card-box:last-child .holder {
+    position: absolute;
+    display: flex;
+    width: 320px;
+    justify-content: space-between;
+    bottom: 10px;
+    left: 30px;
+    color: hsl(0, 0%, 100%);
+  }
+  .card-box img {
+    width: 400px;
+  }
+  .date-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .date-input div {
+    padding-right: 10px;
+  }
+  .form {
+    width: -moz-fit-content;
+    width: fit-content;
+    position: absolute;
+    bottom: 300px;
+    right: 400px;
+  }
+  .form > div {
+    padding-bottom: 20px;
+  }
+  .completed {
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: center;
+    position: absolute;
+    bottom: 300px;
+    right: 400px;
+  }
+  .completed > * {
+    padding-bottom: 20px;
+  }
+}
+input[type=text] {
+  font-size: 20px;
+  padding: 10px 3px;
+  border: 1px solid hsl(279, 6%, 55%);
+  border-radius: 10px;
+  outline: none;
+}
+input[type=text]:focus {
+  border-color: hsl(278, 68%, 11%);
+}
+
+.date-input input[type=text] {
+  width: 80px;
+}
+
+.submit {
+  background-color: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+  padding: 15px 5px;
+  margin-top: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.completed h2 {
+  color: hsl(278, 68%, 11%);
+}
+
+.completed p {
+  color: hsl(279, 6%, 55%);
+}/*# sourceMappingURL=main.css.map */

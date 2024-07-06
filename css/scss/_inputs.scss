@@ -1,0 +1,25 @@
+input[type='text'] {
+    font-size: 20px;
+    padding: 10px 3px;
+    border: 1px solid $Darkgrayishviolet;
+    border-radius: 10px;
+    outline: none;
+    &:focus {
+        border-color: $Verydarkviolet;
+    }
+}
+
+.date-input input[type='text'] {
+    width: 80px;
+}
+
+.submit {
+    background-color: $Verydarkviolet;
+    color: $White;
+    padding: 15px 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    
+}  

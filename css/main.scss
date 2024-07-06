@@ -1,0 +1,15 @@
+@import 'scss/variables';
+@import 'scss/global';
+@import 'scss/layout';
+@import 'scss/inputs';
+
+.hidden {
+    display: none !important;
+}
+
+.completed h2 {
+    color: $Verydarkviolet;
+}
+.completed p {
+    color: $Darkgrayishviolet;
+}
